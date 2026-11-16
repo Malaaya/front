@@ -1,6 +1,6 @@
 import { CLAVES, eliminar, leer, guardar } from '../utils/storage'
 
-export const API_URL = 'http://localhost:8081/api/v1'
+export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8081/api/v1'
 
 let accessToken = null
 let refreshInProgress = null
